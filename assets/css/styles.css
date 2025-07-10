@@ -70,7 +70,7 @@ body {
   color: var(--text-color);  
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  font-weight: var(--weight -300);
+  font-weight: var(--weight 300);
 }
 
 body {
@@ -215,6 +215,7 @@ input{
     width: 30%;
     height: 2px;
     background-color: var(--text-color);
+    transition: all 0.3s var(--transition);
 }
 
 .tabs__data {
