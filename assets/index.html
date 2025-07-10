@@ -40,13 +40,13 @@
                 <p class="about__description"> Soy un principiante en la programacion</p>
 
                 <div class="tabs__btns">
-                    <span class="tabs__btn tab__active">Main Skills</span>
-                    <span class="tabs__btn">Experience</span>
-                    <span class="tabs__btn">Education & Certification</span>
+                    <span class="tabs__btn tab__active" data-target="#skills">Main Skills</span>
+                    <span class="tabs__btn"data-target="#experience">Experience</span>
+                    <span class="tabs__btn"data-target="#education">Education & Certification</span>
                 </div>
 
                 <div class="tabs__content">
-                    <div class="tabs__item tab__active">
+                    <div class="tabs__item tab__active" data-content id="skills">
                         <div class="tabs__data grid">
                             <p class="tabs__description">
                                 <span>Not many skills in the programming field but if you give me the job I'll surprise you</span>
@@ -57,7 +57,7 @@
                         </div>
                     </div>
 
-                    <div class="tabs__item tab__active">
+                    <div class="tabs__item" data-content id="experience">
                         <div class="tabs__data grid">
                             <p class="tabs__description">
                                 <span>None(for now)</span> 
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     
-                    <div class="tabs__item tab__active">
+                    <div class="tabs__item" data-content id="education">
                         <div class="tabs__data grid">
                             <p class="tabs__description">
                                 <span>Diploma in Systems Engineering</span> - UNEFA

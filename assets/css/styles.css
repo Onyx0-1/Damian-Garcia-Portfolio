@@ -110,7 +110,6 @@ input{
 
 .container {
     max-width: 1260px;
-    background-color: var(--first-color);
     padding-inline: 0.75rem;
 }
 
@@ -226,6 +225,21 @@ input{
     display: block;
 }
 /* Active tab */
+.tabs__btn.tab__active {
+    color: var(--first-color);
+}
+.tabs__btn.tab__active::after {
+    background-color: var(--first-color);
+    width: 100%;
+}
+
+.tabs__item[data-content] {
+    display: none;
+}
+
+.tab__active[data-content] {
+    display: block;
+}
 
 /*=============== SERVICES ===============*/
 
