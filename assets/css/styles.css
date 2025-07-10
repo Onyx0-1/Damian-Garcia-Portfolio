@@ -322,7 +322,9 @@ input{
     font-weight: var(--weight-500);
 }
 
-
+.contact__form{
+    position: relative
+}
 
 .contact__input {
     border: 2px solid var(--border-color);
@@ -336,6 +338,14 @@ input{
 .textarea {
     height: 120px;
     resize: none;
+}
+
+.error__message {
+    position: absolute;
+    bottom: -12%;
+    left: 0;
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-400);
 }
 
 /*=============== FOOTER ===============*/

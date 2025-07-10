@@ -37,3 +37,27 @@ const tabs = document.querySelectorAll('[data-target]'),
  });
 
 /*=============== CONTACT FORM =============== */
+const contactForm = document.getElementById('contact-form'),
+contactName = document.getElementById('contact-name'),
+contactEmail = document.getElementById('contact-email'),
+contactSubject = document.getElementById('contact-subject'),
+contactMessage = document.getElementById('contact-message'),
+errorMessage = document.getElementById('error-message');
+
+const sendEmail = (e) => {
+    e.preventDefault ();
+
+    if (
+        contactName.value === ''||
+        contactEmail.value === ''||
+        contactSubject.value === ''||
+        contactMessage.value === ''
+    ){
+        errorMessage.textContext = 'Write all the input fields'
+    }
+
+    else{}
+};
+
+
+contactForm.addEventListener('submit' , sendEmail);

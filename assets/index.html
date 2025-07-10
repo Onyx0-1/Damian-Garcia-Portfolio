@@ -141,7 +141,7 @@
                     </div>
                     <input type="submit" value="Submit" class="btn">
 
-                    <p class="error__message" id="error-message">Error</p>
+                    <p class="error__message" id="error-message"></p>
                 </form>
             </div>
 
@@ -151,12 +151,27 @@
     </main>
 
     <!--=============== FOOTER ===============-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <a href="index.html" class="footer__logo">D<span>A</span></a>
+            <div class="footer__socials">
+                <a href="www.facebook.com"
+                 target="_blank" 
+                 class="footer__social-link">
+                <i class="uil uil-facebook-f"></i></a>
+            </div>
+
+        </div>
+    </footer>
 
     <!--=============== SCROLL UP ===============-->
 
     <!--=============== EMAIL JS ===============-->
-    <script src=""></script>
+    <script
+     type="text/javascript" 
+     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
 
     <!--=============== MAIN JS ===============-->
     <script src="/assets/js/main.js"></script>
