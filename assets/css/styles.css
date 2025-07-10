@@ -7,12 +7,12 @@
 
   /*========== Colors ==========*/
   /* Color mode HSL(hue, saturation, lightness) */
-  --first-color: HSL(350, 98%, 64%);
-  --title-color: HSL(0, 0%, 100%);
-  --text-color: HSL(0, 0%, 77%);
-  --body-color: HSL(0, 0%, 6%);
-  --container-color: HSL(0, 0%, 10%); 
-  --border-color: HSLa(0, 0%, 100%, 0.2);
+  --first-color: hsl(350, 98%, 64%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 77%);
+  --body-color: hsl(0, 0%, 6%);
+  --container-color: hsl(0, 0%, 10%); 
+  --border-color: hsla(0, 0%, 100%, 0.2);
 
   /*========== Font and typography ==========*/
   /* .5rem = 8px | 1rem = 16px ... */
@@ -36,7 +36,7 @@
   --weight-900: 900;
 
   /*========== Transition ==========*/
-  --transition: cubic-beizer(0.5, 0.2, 0.1, 1);
+  --transition: cubic-bezier(0.5, 0.2, 0.1, 1);
 
   /*========== Border Radius ==========*/
   --radius: 0.5rem;
@@ -108,6 +108,17 @@ input{
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 
+.container {
+    max-width: 1260px;
+    background-color: var(--first-color);
+    padding-inline: 0.75rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.75rem;
+}
+
 /*=============== HEADER & NAV ===============*/
 
 /* Active link */
@@ -115,7 +126,39 @@ input{
 /* Change background header */
 
 /*=============== HOME ===============*/
+.home {
+    padding-block: 16rem 9rem;
+}
 
+.home__container {
+    grid-template-columns: 7fr 5fr;
+    align-items: center;
+}
+
+.home__subtitle {
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-400);
+    letter-spacing: 0.25rem;
+    margin-bottom: 1.25rem;
+    display: block;
+}
+
+.home__title  {
+    font-family: var(--second-font);
+    font-size: var(--big-font-size);
+    font-weight: var(--weight-900)
+}
+
+.home__title span {
+    color: var(--first-color);
+}
+
+.home__img {
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    border: 0.75 solid var(--container-color);
+}
 /*=============== ABOUT ===============*/
 
 /* Active tab */
